@@ -1,1 +1,1 @@
-export default function (): void;
+export declare function conduct(root: HTMLElement): void;

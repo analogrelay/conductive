@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F095
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conductive.Samples", "samples\Conductive.Samples\Conductive.Samples.csproj", "{BB125FEF-3CBF-4728-8DBE-916663C2530B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E012E1B8-ABEE-4398-8704-C799F1CCFACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conductive.AspNetCore.Tests", "test\Conductive.AspNetCore.Tests\Conductive.AspNetCore.Tests.csproj", "{E9B4E0E4-422C-4A0A-8C68-1A6C2693CEAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,14 @@ Global
 		{BB125FEF-3CBF-4728-8DBE-916663C2530B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB125FEF-3CBF-4728-8DBE-916663C2530B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB125FEF-3CBF-4728-8DBE-916663C2530B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B4E0E4-422C-4A0A-8C68-1A6C2693CEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B4E0E4-422C-4A0A-8C68-1A6C2693CEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B4E0E4-422C-4A0A-8C68-1A6C2693CEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B4E0E4-422C-4A0A-8C68-1A6C2693CEAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0A941E4A-918C-4D4B-9CEC-0C7557F6D8A2} = {003D3ABD-970B-4FE5-A5A2-34523C2634A6}
 		{BB125FEF-3CBF-4728-8DBE-916663C2530B} = {F095A8EF-374F-4933-A968-1DE2C4D780F8}
+		{E9B4E0E4-422C-4A0A-8C68-1A6C2693CEAA} = {E012E1B8-ABEE-4398-8704-C799F1CCFACD}
 	EndGlobalSection
 EndGlobal

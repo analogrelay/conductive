@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Conductive.AspNetCore\Conductive.AspNetCore.csproj" />
+  </ItemGroup>
+
 </Project>

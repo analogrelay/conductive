@@ -5,5 +5,27 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Conductive.AspNetCore.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  
+  <Target Name="BuildScript" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <JSRoot Condition="'$(JSRoot)' == ''">$([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)', '../conductivejs'))</JSRoot>
+      <_ResolvedJSRoot>$([System.IO.Path]::GetFullPath('$(JSRoot)'))</_ResolvedJSRoot>
+      <_OutputJSFile>$(_ResolvedJSRoot)/dist/browser/conductive.js</_OutputJSFile>
+    </PropertyGroup>
+    <Exec Command="yarn build" WorkingDirectory="$(_ResolvedJSRoot)" />
+    <ItemGroup>
+      <EmbeddedResource Include="$(_OutputJSFile)" />
+    </ItemGroup>
+  </Target>
 
 </Project>
